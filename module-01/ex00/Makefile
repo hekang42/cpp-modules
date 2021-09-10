@@ -6,17 +6,17 @@
 #    By: hekang <hekang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/10 14:41:25 by hekang            #+#    #+#              #
-#    Updated: 2021/09/10 22:11:18 by hekang           ###   ########.fr        #
+#    Updated: 2021/09/10 17:32:55 by hekang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Moar_brainz!
+NAME	= BraiiiiiiinnnzzzZ
 
 GCCFLAG = -Wall -Werror -Wextra
 
 RM		= rm -f
 
-SRCS	= main.cpp ZombieHorde.cpp Zombie.cpp
+SRCS	= main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
 
 INCS	= -I Zombie.hpp
 

@@ -6,24 +6,24 @@
 #    By: hekang <hekang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/10 14:41:25 by hekang            #+#    #+#              #
-#    Updated: 2021/09/10 22:11:18 by hekang           ###   ########.fr        #
+#    Updated: 2021/09/10 22:31:20 by hekang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Moar_brainz!
+NAME	= HI_THIS_IS_BRAIN!
 
 GCCFLAG = -Wall -Werror -Wextra
 
 RM		= rm -f
 
-SRCS	= main.cpp ZombieHorde.cpp Zombie.cpp
+SRCS	= main.cpp
 
-INCS	= -I Zombie.hpp
+# INCS	= .
 
 all		: $(NAME)
 
 $(NAME) :
-		clang++ $(GCCFLAG) $(INCS) $(SRCS) -o $@ 
+		clang++ $(GCCFLAG) $(SRCS) -o $@ 
 
 clean	:
 		$(RM) $(NAME)

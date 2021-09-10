@@ -10,15 +10,9 @@ const std::string NAME[] =
 
 int main(void)
 {
-	Zombie stackZombie = Zombie("stackZombie");
+	Zombie *zombies;
 
-	Zombie *heapZombie = newZombie("heapZombie");
-	delete heapZombie;
-
-	for (int i = 0; i < 4; i++)
-	{
-		randomChump(NAME[rand() % 4]);
-	}
-
-	
+	zombies = zombieHorde(5, "hakang");
+	delete[] zombies;
+	return (0);
 }
