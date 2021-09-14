@@ -6,11 +6,11 @@
 #    By: hekang <hekang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/10 14:41:25 by hekang            #+#    #+#              #
-#    Updated: 2021/09/14 14:09:48 by hekang           ###   ########.fr        #
+#    Updated: 2021/09/14 15:27:30 by hekang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= My_First_Orthodox_Class
+NAME	= Towards_a_more_useful_fixed_point_class
 
 GCCFLAG = -Wall -Werror -Wextra
 
