@@ -1,5 +1,5 @@
-#ifndef ZOMBIE_H
-# define ZOMBIE_H
+#ifndef WEAPON_H
+# define WEAPON_H
 #include <iostream>
 
 class Weapon
