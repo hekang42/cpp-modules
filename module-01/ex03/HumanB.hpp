@@ -8,11 +8,10 @@ class HumanB
 public:
 	HumanB(void);
 	HumanB(std::string name);
-	HumanB(std::string name, Weapon weapon);
 	std::string name;
-	Weapon weapon;
+	Weapon *weapon;
 
-	void setWeapon(Weapon weapon);
+	void setWeapon(Weapon &weapon);
 	void attack(void);
 };
 # endif

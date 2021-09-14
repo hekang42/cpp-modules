@@ -6,24 +6,24 @@
 #    By: hekang <hekang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/10 14:41:25 by hekang            #+#    #+#              #
-#    Updated: 2021/09/14 09:36:35 by hekang           ###   ########.fr        #
+#    Updated: 2021/09/14 10:31:54 by hekang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Unnecessary_violence
+NAME	= Karen
 
 GCCFLAG = -Wall -Werror -Wextra
 
 RM		= rm -f
 
-SRCS	= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS	= main.cpp Karen.cpp
 
-INCS	= -I HumanA.hpp HumanB.hpp Weapon.hpp
+INCS	= -I Karen.hpp
 
 all		: $(NAME)
 
 $(NAME) : $(SRCS)
-		clang++ $(GCCFLAG) -o $@ $(SRCS)
+		clang++ $(GCCFLAG) $(SRCS) -o $@
 
 clean	:
 		$(RM) $(NAME)
