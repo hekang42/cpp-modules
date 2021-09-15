@@ -7,7 +7,7 @@ Fixed::Fixed()
 }
 Fixed::~Fixed()
 {
-	std::cout<< "Destuctor called" << std::endl;
+	std::cout<< "Destructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &ref) // copy constructor
@@ -51,7 +51,7 @@ int Fixed::getRawBits() const
 
 void Fixed::setRawBits(int const raw)
 {
-	(void)raw;
+	this->i = raw;
 }
 
 int Fixed::toInt() const
