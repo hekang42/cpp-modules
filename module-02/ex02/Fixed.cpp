@@ -3,37 +3,29 @@
 Fixed::Fixed()
 {
 	this->i = 0;
-	std::cout<< "Default constructor called" << std::endl;
 }
 Fixed::~Fixed()
 {
-	std::cout<< "Destructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &ref) // copy constructor
 {
-	std::cout<< "Copy constructor called" << std::endl;
 	*this = ref;
 }
 
 Fixed::Fixed(float n)
 {
-	std::cout<< "Float constructor called" << std::endl;
-
 	this->i = (int)roundf(n * (1 << fractional_bits));
 }
 
 Fixed::Fixed(int n)
 {
-	std::cout<< "Int constructor called" << std::endl;
 	this->i = n << this->fractional_bits;
 }
 
 Fixed &Fixed::operator=(const Fixed &ref) // assignation operator overload.
 
 {
-	std::cout<< "Assignation operator called" << std::endl;
-	
 	this->i = ref.getRawBits();
 	return *this;
 }
