@@ -3,10 +3,11 @@
 Cat::Cat(void) : Animal()
 {
 	this->type = "Cat";
+	this->brain = new Brain();
 }
 Cat::~Cat(void)
 {
-	
+	delete (this->brain);
 }
 Cat::Cat(const Cat &other)
 {
@@ -15,6 +16,7 @@ Cat::Cat(const Cat &other)
 Cat &Cat::operator=(const Cat &other)
 {
 	this->type = other.type;
+	this->brain = new Brain(*other.brain);
 	return (*this);
 }
 
@@ -26,7 +28,3 @@ void Cat::makeSound(void) const
 {
 	std::cout << "Mew Mew" <<std::endl;
 }
-// std::string Cat::getType(void) const
-// {
-// 	return (this->type);
-// }
