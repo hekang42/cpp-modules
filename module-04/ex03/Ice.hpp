@@ -2,7 +2,7 @@
 #define ICE_H
 
 #include "AMateria.hpp"
-class Ice : public Amateria
+class Ice : public AMateria
 {
 private:
 
@@ -11,7 +11,7 @@ public:
 	Ice(Ice const &other);
 	Ice &operator=(Ice const &other);
 	~Ice();
-	Amateria *clone() const;
+	AMateria *clone() const;
 	void use(ICharacter &target);
 };
 
