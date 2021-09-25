@@ -34,7 +34,7 @@ public:
 			this->array[i] = other[i];
 		return *this;
 	}
-	T &operator[](int i) const
+	T operator[](int i) const
 	{
 		if (i < 0 || i >= static_cast<int>(this->size()))
 			throw Array::OutOfRangeException();
